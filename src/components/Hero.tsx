@@ -19,7 +19,7 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <LogoMark className="absolute right-[-60px] bottom-[-40px] h-[420px] w-[420px] text-gold-500/[0.04] pointer-events-none hidden lg:block" />
+      <LogoMark className="absolute right-10 bottom-10 h-[250px] w-[250px] opacity-35 pointer-events-none hidden lg:block" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-12 w-full">
         <div className="max-w-4xl fade-in-up">
