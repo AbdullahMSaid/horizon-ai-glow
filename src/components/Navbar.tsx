@@ -22,10 +22,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[rgba(9,20,39,0.85)] backdrop-blur-xl border-b border-gold-500/15"
-          : "bg-transparent"
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-[rgba(8,17,30,0.6)] backdrop-blur-2xl border-b border-gold-500/20 ${
+        scrolled ? "shadow-[0_4px_30px_rgba(0,0,0,0.45)]" : ""
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
@@ -46,7 +44,7 @@ export default function Navbar() {
         <div className="hidden md:block">
           <a
             href="#contact"
-            className="inline-flex items-center px-5 py-2.5 rounded-md bg-gold-500 text-navy-950 font-semibold text-sm hover:bg-gold-400 transition-colors shadow-[0_0_20px_rgba(230,164,76,0.25)]"
+            className="gold-gradient-btn inline-flex items-center px-5 py-2.5 rounded-md font-semibold text-sm tracking-wide"
           >
             Book a Call
           </a>
