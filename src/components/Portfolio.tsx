@@ -1,6 +1,7 @@
 import SectionTitle from "./SectionTitle";
 import Reveal from "./Reveal";
 import { Check, ArrowUpRight, Play } from "lucide-react";
+import flowledgerPreview from "@/assets/flowledger-preview.png";
 
 const FLOWLEDGER_URL = "https://flowledgerai.com";
 
@@ -104,39 +105,18 @@ export default function Portfolio() {
                   </div>
 
                   {/* Preview area */}
-                  <div className="relative aspect-[16/10] bg-gradient-to-br from-navy-950 via-navy-900 to-navy-950 overflow-hidden">
-                    {/* Faux nav */}
-                    <div className="absolute top-0 left-0 right-0 flex items-center justify-between px-5 py-3 border-b border-gold-500/10">
-                      <div className="h-2.5 w-20 rounded bg-gold-500/40" />
-                      <div className="flex gap-3">
-                        <div className="h-2 w-10 rounded bg-text-secondary/30" />
-                        <div className="h-2 w-10 rounded bg-text-secondary/30" />
-                        <div className="h-2 w-10 rounded bg-text-secondary/30" />
-                        <div className="h-2 w-14 rounded bg-gold-500/50" />
-                      </div>
-                    </div>
+                  <div className="relative aspect-[16/10] bg-navy-950 overflow-hidden">
+                    <img
+                      src={flowledgerPreview}
+                      alt="Flowledger AI website preview"
+                      className="absolute inset-0 w-full h-full object-cover object-top transition-all duration-300 group-hover:brightness-110"
+                    />
 
-                    {/* Faux hero */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[60%] w-3/4 text-center">
-                      <div className="h-3 w-40 rounded bg-gold-500/30 mx-auto" />
-                      <div className="mt-3 h-5 w-full rounded bg-text-primary/20 mx-auto" />
-                      <div className="mt-2 h-5 w-4/5 rounded bg-text-primary/15 mx-auto" />
-                      <div className="mt-4 h-2 w-2/3 rounded bg-text-secondary/20 mx-auto" />
-                      <div className="mt-1 h-2 w-1/2 rounded bg-text-secondary/20 mx-auto" />
-                    </div>
-
-                    {/* Faux cards row */}
-                    <div className="absolute bottom-6 left-5 right-5 grid grid-cols-3 gap-3">
-                      <div className="h-10 rounded bg-gold-500/10 border border-gold-500/20" />
-                      <div className="h-10 rounded bg-gold-500/10 border border-gold-500/20" />
-                      <div className="h-10 rounded bg-gold-500/10 border border-gold-500/20" />
-                    </div>
-
-                    {/* Bottom fade */}
-                    <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-navy-950/90 to-transparent pointer-events-none" />
+                    {/* Bottom dark gradient to blend with stat chips */}
+                    <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-navy-950 via-navy-950/70 to-transparent pointer-events-none" />
 
                     {/* Center overlay CTA */}
-                    <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                       <div className="flex flex-col items-center gap-3 transition-transform duration-300 group-hover:scale-105">
                         <div className="h-16 w-16 rounded-full bg-gold-500/20 border border-gold-500/60 backdrop-blur-md flex items-center justify-center group-hover:bg-gold-500/40 transition-all shadow-[0_0_24px_rgba(230,164,76,0.35)]">
                           <Play size={24} className="text-gold-400 ml-1" fill="currentColor" />
