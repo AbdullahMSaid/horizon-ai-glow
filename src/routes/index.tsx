@@ -1,26 +1,43 @@
 import { createFileRoute } from "@tanstack/react-router";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import About from "@/components/About";
+import Pricing from "@/components/Pricing";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/sonner";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Horizon AI Solutions — Intelligent Systems. Real Results." },
+      {
+        name: "description",
+        content:
+          "Luxury AI consultancy delivering strategy, automation, training, and custom AI tools for forward-thinking teams.",
+      },
+      { property: "og:title", content: "Horizon AI Solutions" },
+      {
+        property: "og:description",
+        content: "AI strategy, workflow automation, workshops, and custom tools — built for scale.",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="relative">
+      <Navbar />
+      <Hero />
+      <Services />
+      <About />
+      <Pricing />
+      <Contact />
+      <Footer />
+      <Toaster />
+    </main>
+  );
 }
