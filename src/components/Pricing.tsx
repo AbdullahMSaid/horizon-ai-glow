@@ -48,7 +48,7 @@ export default function Pricing() {
               <div
                 className={`relative rounded-2xl p-8 h-full flex flex-col gold-glow ${
                   t.popular
-                    ? "glass-strong border-2 border-gold-500 md:-translate-y-3 shadow-[0_0_50px_rgba(230,164,76,0.2)]"
+                    ? "glass-strong border-2 border-gold-500/70 md:-translate-y-3 shadow-[0_0_32px_rgba(230,164,76,0.25)]"
                     : "glass"
                 }`}
               >
@@ -80,8 +80,8 @@ export default function Pricing() {
                   href="#contact"
                   className={`block text-center px-5 py-3 rounded-md font-semibold transition-all ${
                     t.popular
-                      ? "bg-gold-500 text-navy-950 hover:bg-gold-400"
-                      : "border border-gold-500 text-gold-500 hover:bg-gold-500/10"
+                      ? "gold-gradient-btn"
+                      : "border border-gold-500/60 text-gold-400 hover:bg-gold-500/10 hover:border-gold-500"
                   }`}
                 >
                   {t.cta}

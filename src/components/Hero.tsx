@@ -5,16 +5,16 @@ export default function Hero() {
   return (
     <section id="top" className="relative min-h-screen flex items-center overflow-hidden pt-24">
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center scale-105"
         style={{ backgroundImage: `url(${heroImg})` }}
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-[rgba(8,17,30,0.78)]" aria-hidden="true" />
+      <div className="absolute inset-0 bg-[rgba(8,17,30,0.55)]" aria-hidden="true" />
       <div
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse at 50% 30%, rgba(230,164,76,0.10), transparent 60%), linear-gradient(180deg, rgba(11,22,48,0.4) 0%, rgba(8,17,30,1) 100%)",
+            "radial-gradient(ellipse 60% 45% at 50% 55%, rgba(230,164,76,0.22), transparent 70%), radial-gradient(ellipse at 50% 100%, rgba(8,17,30,0.95), transparent 60%), linear-gradient(180deg, rgba(8,17,30,0.4) 0%, rgba(8,17,30,0.85) 100%)",
         }}
         aria-hidden="true"
       />
@@ -23,8 +23,8 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-20 w-full">
         <div className="max-w-4xl fade-in-up">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-xs tracking-[0.3em] uppercase text-gold-400 mb-8">
-            <span className="h-1.5 w-1.5 rounded-full bg-gold-500 animate-pulse" />
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass-strong text-[11px] tracking-[0.4em] uppercase text-gold-400 mb-8 border border-gold-500/30">
+            <span className="h-1.5 w-1.5 rounded-full bg-gold-500 animate-pulse shadow-[0_0_10px_rgba(230,164,76,0.8)]" />
             Luxury AI Consulting
           </div>
 
@@ -46,13 +46,13 @@ export default function Hero() {
           <div className="mt-10 flex flex-wrap gap-4">
             <a
               href="#services"
-              className="inline-flex items-center px-7 py-3.5 rounded-md border border-gold-500 text-gold-500 font-semibold hover:bg-gold-500/10 hover:text-gold-400 transition-all"
+              className="inline-flex items-center px-7 py-3.5 rounded-md border border-gold-500/60 text-gold-400 font-semibold hover:bg-gold-500/10 hover:border-gold-500 transition-all backdrop-blur-sm"
             >
               Explore Services
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center px-7 py-3.5 rounded-md bg-gold-500 text-navy-950 font-semibold hover:bg-gold-400 transition-all shadow-[0_0_30px_rgba(230,164,76,0.3)]"
+              className="gold-gradient-btn inline-flex items-center px-7 py-3.5 rounded-md font-semibold"
             >
               Book a Free Consultation
             </a>
