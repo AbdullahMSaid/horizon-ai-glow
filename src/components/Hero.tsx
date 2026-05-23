@@ -3,7 +3,7 @@ import { LogoMark } from "./Logo";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative min-h-screen flex items-center overflow-hidden pt-24">
+    <section id="top" className="relative min-h-[80vh] flex items-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center scale-105"
         style={{ backgroundImage: `url(${heroImg})` }}
@@ -21,7 +21,7 @@ export default function Hero() {
 
       <LogoMark className="absolute right-[-60px] bottom-[-40px] h-[420px] w-[420px] text-gold-500/[0.04] pointer-events-none hidden lg:block" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-20 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-12 w-full">
         <div className="max-w-4xl fade-in-up">
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass-strong text-[11px] tracking-[0.4em] uppercase text-gold-400 mb-8 border border-gold-500/30">
             <span className="h-1.5 w-1.5 rounded-full bg-gold-500 animate-pulse shadow-[0_0_10px_rgba(230,164,76,0.8)]" />

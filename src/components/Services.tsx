@@ -27,10 +27,10 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-28">
+    <section id="services" className="relative py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <SectionTitle eyebrow="Capabilities" title="What We Do" />
-        <div className="mt-16 grid md:grid-cols-2 gap-6">
+        <div className="mt-8 grid md:grid-cols-2 gap-6">
           {services.map((s, i) => (
             <Reveal key={s.title} delay={i * 80}>
               <div className="glass gold-glow rounded-2xl p-8 h-full relative overflow-hidden group">
