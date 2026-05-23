@@ -50,7 +50,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={sent}
-              className="w-full md:w-auto inline-flex justify-center items-center px-8 py-3.5 rounded-md bg-gold-500 text-navy-950 font-semibold hover:bg-gold-400 transition-all shadow-[0_0_28px_rgba(230,164,76,0.3)] disabled:opacity-60"
+              className="gold-gradient-btn w-full md:w-auto inline-flex justify-center items-center px-8 py-3.5 rounded-md font-semibold disabled:opacity-60"
             >
               {sent ? "Sent ✓" : "Send Message"}
             </button>
