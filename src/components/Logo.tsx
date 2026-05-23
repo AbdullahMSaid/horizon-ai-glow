@@ -18,7 +18,7 @@ export default function Logo({ size = "sm", showWordmark = true }: Props) {
   const heading = size === "lg" ? "text-4xl md:text-5xl" : "text-base";
   const sub = size === "lg" ? "text-sm tracking-[0.55em]" : "text-[9px] tracking-[0.4em]";
   return (
-    <a href="#top" className="flex items-center gap-3 transition-opacity hover:opacity-80">
+    <div className="flex items-center gap-3 transition-opacity hover:opacity-80 cursor-pointer">
       <LogoMark className={iconSize} />
       {showWordmark && (
         <div className="flex flex-col leading-none">
@@ -28,6 +28,6 @@ export default function Logo({ size = "sm", showWordmark = true }: Props) {
           <span className={`wordmark font-light text-gold-500/75 mt-1.5 ${sub}`}>AI Solutions</span>
         </div>
       )}
-    </a>
+    </div>
   );
 }
