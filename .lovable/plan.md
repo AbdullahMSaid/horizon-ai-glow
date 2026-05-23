@@ -1,6 +1,15 @@
-Update the decorative `LogoMark` watermark in `src/components/Hero.tsx`:
+Update the Pricing section (`src/components/Pricing.tsx`) to reflect a consultation-first model instead of dollar-based pricing.
 
-- Reduce size from `h-[420px] w-[420px]` to `h-[250px] w-[250px]` (~60%).
-- Reposition from negative offsets (`right-[-60px] bottom-[-40px]`) to safe inset values (`right-10 bottom-10`) so it's fully visible, not cropped.
-- Increase opacity from `text-gold-500/[0.04]` to `text-gold-500/[0.35]` for a clear watermark feel.
-- Keep `hidden lg:block` and `pointer-events-none` so it stays a desktop-only decorative element.
+**Data changes:**
+1. Replace each tier's price display:
+   - Starter: `"Quoted per session"` (single-line, no unit)
+   - Growth: `"Custom scoped"` (single-line, no unit)
+   - Partner: `"Retainer — let's talk"` (single-line, no unit)
+2. Change all three card CTAs to `"Book a Discovery Call"`.
+3. Add a line above the pricing card grid:
+   > "Every engagement starts with a free 30-minute discovery call. No commitment, no pressure — just clarity on what's possible."
+
+**UI changes:**
+- Combine price + unit into a single string so the display renders cleanly as one line.
+- Insert the new intro line between the `<SectionTitle>` and the card grid (`<div className="mt-16 grid ...">`).
+- Keep existing card styling, "Most Popular" badge, and feature lists untouched.
