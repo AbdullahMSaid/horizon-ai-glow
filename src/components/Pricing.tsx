@@ -39,6 +39,10 @@ export default function Pricing() {
           intro="Our pricing is tailored to the scope and complexity of each engagement. Whether you need a single workshop or an ongoing AI partner, we have a structure that fits."
         />
 
+        <p className="mt-8 max-w-3xl mx-auto text-center text-text-secondary leading-relaxed">
+          Every engagement starts with a free 30-minute discovery call. No commitment, no pressure — just clarity on what's possible.
+        </p>
+
         <div className="mt-16 grid md:grid-cols-3 gap-6">
           {tiers.map((t, i) => (
             <Reveal key={t.name} delay={i * 100}>
@@ -57,9 +61,8 @@ export default function Pricing() {
                 <h3 className="text-2xl font-bold text-text-primary">{t.name}</h3>
                 <p className="mt-3 text-text-secondary text-sm leading-relaxed min-h-[3rem]">{t.desc}</p>
 
-                <div className="mt-6 flex items-baseline gap-2">
-                  <span className="text-3xl font-bold gold-text-gradient">{t.price}</span>
-                  <span className="text-text-secondary text-sm">{t.unit}</span>
+                <div className="mt-6">
+                  <span className="text-2xl font-bold gold-text-gradient">{t.price}</span>
                 </div>
 
                 <div className="my-6 h-px bg-gold-500/15" />
