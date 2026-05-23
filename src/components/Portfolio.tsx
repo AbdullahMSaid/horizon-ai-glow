@@ -109,7 +109,7 @@ export default function Portfolio() {
                     <img
                       src={flowledgerPreview}
                       alt="Flowledger AI website preview"
-                      className="absolute inset-0 w-full h-full object-cover object-top transition-all duration-300 group-hover:brightness-110"
+                      className="absolute inset-0 w-full h-full object-contain object-top bg-white transition-all duration-300 group-hover:brightness-110"
                     />
 
                     {/* Bottom dark gradient to blend with stat chips */}
