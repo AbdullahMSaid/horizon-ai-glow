@@ -3,7 +3,7 @@ import { LogoMark } from "./Logo";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative min-h-screen flex items-center overflow-hidden pt-24">
+    <section id="top" className="relative min-h-[80vh] flex items-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center scale-105"
         style={{ backgroundImage: `url(${heroImg})` }}
