@@ -45,7 +45,9 @@ export default function Navbar() {
 
         <div className="hidden md:block">
           <a
-            href="#contact"
+            href="https://calendly.com/abdullahi_said1/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="gold-gradient-btn inline-flex items-center px-5 py-2.5 rounded-md font-semibold text-sm tracking-wide"
           >
             Book a Call
