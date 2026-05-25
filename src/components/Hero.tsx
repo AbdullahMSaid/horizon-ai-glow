@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="max-w-4xl fade-in-up">
           <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass-strong text-[11px] tracking-[0.4em] uppercase text-gold-400 mb-8 border border-gold-500/30">
             <span className="h-1.5 w-1.5 rounded-full bg-gold-500 animate-pulse shadow-[0_0_10px_rgba(230,164,76,0.8)]" />
-            Luxury AI Consulting
+            Professional AI Consulting
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] text-text-primary">

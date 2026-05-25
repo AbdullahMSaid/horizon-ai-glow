@@ -5,10 +5,10 @@ import { Menu, X } from "lucide-react";
 const links = [
   { label: "Services", href: "/#services" },
   { label: "About", href: "/#about" },
-  { label: "Founder", href: "/founder" },
   { label: "Portfolio", href: "/#portfolio" },
   { label: "Pricing", href: "/#pricing" },
   { label: "Contact", href: "/#contact" },
+  { label: "Founder", href: "/founder" },
 ];
 
 export default function Navbar() {
@@ -29,7 +29,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-        <a href="#top" className="shrink-0"><Logo /></a>
+        <a href="/" className="shrink-0"><Logo /></a>
 
         <nav className="hidden md:flex items-center gap-10">
           {links.map((l) => (
