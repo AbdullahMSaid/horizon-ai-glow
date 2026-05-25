@@ -115,7 +115,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="gold-gradient-btn w-full md:w-auto inline-flex justify-center items-center px-8 py-3.5 rounded-md font-semibold disabled:opacity-60"
+                  className="gold-gradient-btn w-full inline-flex justify-center items-center px-8 py-4 rounded-md font-semibold text-base disabled:opacity-60"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </button>

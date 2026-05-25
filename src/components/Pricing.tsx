@@ -77,9 +77,7 @@ export default function Pricing() {
                 </ul>
 
                 <a
-                  href="https://calendly.com/abdullahi_said1/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#contact"
                   className={`block text-center px-5 py-3 rounded-md font-semibold transition-all ${
                     t.popular
                       ? "gold-gradient-btn"
