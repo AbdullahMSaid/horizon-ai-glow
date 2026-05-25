@@ -245,7 +245,7 @@ function FounderPage() {
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.3 }}
-                    transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                    transition={{ duration: 0.7, ease: EASE }}
                     className={`relative grid md:grid-cols-2 gap-8 md:gap-16 items-center ${
                       leftSide ? "" : "md:[&>*:first-child]:order-2"
                     }`}
@@ -407,7 +407,7 @@ function FounderPage() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.6, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.6, delay: i * 0.08, ease: EASE }}
                 className="group relative rounded-2xl p-7 border border-gold-500/15 bg-navy-900/40 hover:border-gold-500/50 hover:-translate-y-1 transition-all duration-300"
                 style={{ backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }}
               >
