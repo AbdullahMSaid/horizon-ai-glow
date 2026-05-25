@@ -72,7 +72,7 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a href="#contact" onClick={() => setOpen(false)}
+            <a href="https://calendly.com/abdullahi_said1/30min" onClick={() => setOpen(false)} target="_blank" rel="noopener noreferrer"
                className="inline-flex justify-center px-5 py-2.5 rounded-md bg-gold-500 text-navy-950 font-semibold">
               Book a Call
             </a>
