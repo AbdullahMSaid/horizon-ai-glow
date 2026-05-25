@@ -1,7 +1,7 @@
 import SectionTitle from "./SectionTitle";
 import Reveal from "./Reveal";
 import { Check, ArrowUpRight, Play } from "lucide-react";
-import flowledgerPreview from "@/assets/flowledger-preview.png";
+import flowledgerPreview from "@/assets/flowledger-preview.webp";
 
 const FLOWLEDGER_URL = "https://flowledgerai.com";
 
