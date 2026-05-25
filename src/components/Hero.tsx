@@ -51,7 +51,9 @@ export default function Hero() {
               Explore Services
             </a>
             <a
-              href="#contact"
+              href="https://calendly.com/abdullahi_said1/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="gold-gradient-btn inline-flex items-center px-7 py-3.5 rounded-md font-semibold"
             >
               Book a Free Consultation

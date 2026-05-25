@@ -45,7 +45,9 @@ export default function Navbar() {
 
         <div className="hidden md:block">
           <a
-            href="#contact"
+            href="https://calendly.com/abdullahi_said1/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="gold-gradient-btn inline-flex items-center px-5 py-2.5 rounded-md font-semibold text-sm tracking-wide"
           >
             Book a Call
@@ -70,7 +72,7 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a href="#contact" onClick={() => setOpen(false)}
+            <a href="https://calendly.com/abdullahi_said1/30min" onClick={() => setOpen(false)} target="_blank" rel="noopener noreferrer"
                className="inline-flex justify-center px-5 py-2.5 rounded-md bg-gold-500 text-navy-950 font-semibold">
               Book a Call
             </a>

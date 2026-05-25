@@ -375,7 +375,9 @@ function FounderPage() {
             </p>
             <div className="mt-12 flex flex-wrap gap-4 justify-center">
               <a
-                href="/#contact"
+                href="https://calendly.com/abdullahi_said1/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="gold-gradient-btn inline-flex items-center px-8 py-4 rounded-md font-semibold shadow-[0_0_30px_rgba(230,164,76,0.35)]"
               >
                 Book a Discovery Call
