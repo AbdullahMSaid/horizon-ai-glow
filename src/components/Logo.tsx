@@ -1,4 +1,4 @@
-import logoSvg from "@/assets/logo.png";
+import logoSvg from "@/assets/logo.webp";
 
 type Props = { size?: "sm" | "lg"; showWordmark?: boolean };
 

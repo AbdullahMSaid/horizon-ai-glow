@@ -1,4 +1,4 @@
-import heroImg from "@/assets/hero-skyline.jpg";
+import heroImg from "@/assets/hero-skyline.webp";
 import { LogoMark } from "./Logo";
 
 export default function Hero() {

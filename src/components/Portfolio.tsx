@@ -1,7 +1,7 @@
 import SectionTitle from "./SectionTitle";
 import Reveal from "./Reveal";
 import { Check, ArrowUpRight, Play } from "lucide-react";
-import flowledgerPreview from "@/assets/flowledger-preview.png";
+import flowledgerPreview from "@/assets/flowledger-preview.webp";
 
 const FLOWLEDGER_URL = "https://flowledgerai.com";
 
@@ -109,8 +109,11 @@ export default function Portfolio() {
                     <img
                       src={flowledgerPreview}
                       alt="Flowledger AI website preview"
+                      loading="lazy"
+                      decoding="async"
                       className="absolute inset-0 w-full h-full object-contain object-top bg-white transition-all duration-300 group-hover:brightness-110"
                     />
+
 
                     {/* Bottom dark gradient to blend with stat chips */}
                     <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-navy-950 via-navy-950/70 to-transparent pointer-events-none" />
