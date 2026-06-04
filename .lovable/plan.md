@@ -1,15 +1,14 @@
-Update the Pricing section (`src/components/Pricing.tsx`) to reflect a consultation-first model instead of dollar-based pricing.
+## Problem
+The "Professional AI Consulting" pill in the Hero section has two issues:
+1. **Desktop**: Sits too close to the fixed navbar, needs more breathing room.
+2. **Mobile**: The wide `tracking-[0.4em]` text overflows the viewport and gets clipped by the section's `overflow-hidden`, causing the pill to disappear entirely.
 
-**Data changes:**
-1. Replace each tier's price display:
-   - Starter: `"Quoted per session"` (single-line, no unit)
-   - Growth: `"Custom scoped"` (single-line, no unit)
-   - Partner: `"Retainer — let's talk"` (single-line, no unit)
-2. Change all three card CTAs to `"Book a Discovery Call"`.
-3. Add a line above the pricing card grid:
-   > "Every engagement starts with a free 30-minute discovery call. No commitment, no pressure — just clarity on what's possible."
+## Fix
+Update the pill wrapper in `src/components/Hero.tsx` with responsive adjustments:
+- Add top margin to push it down from the navbar on desktop (`mt-6 md:mt-10` or similar).
+- Reduce letter-spacing on small screens: `tracking-[0.15em] sm:tracking-[0.4em]`.
+- Reduce horizontal padding on mobile: `px-3 sm:px-5`.
+- Optionally reduce font size slightly on mobile so it doesn't break layout.
 
-**UI changes:**
-- Combine price + unit into a single string so the display renders cleanly as one line.
-- Insert the new intro line between the `<SectionTitle>` and the card grid (`<div className="mt-16 grid ...">`).
-- Keep existing card styling, "Most Popular" badge, and feature lists untouched.
+## Files
+- `src/components/Hero.tsx` — one targeted edit to the pill's CSS classes.

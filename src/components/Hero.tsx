@@ -3,7 +3,7 @@ import { LogoMark } from "./Logo";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative min-h-[80vh] flex items-center overflow-hidden">
+    <section id="top" className="relative min-h-[80vh] flex items-center overflow-hidden pt-28 md:pt-24">
       <div
         className="absolute inset-0 bg-cover bg-center scale-105"
         style={{ backgroundImage: `url(${heroImg})` }}
@@ -23,9 +23,9 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-12 w-full">
         <div className="max-w-4xl fade-in-up">
-          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass-strong text-[11px] tracking-[0.4em] uppercase text-gold-400 mb-8 border border-gold-500/30">
-            <span className="h-1.5 w-1.5 rounded-full bg-gold-500 animate-pulse shadow-[0_0_10px_rgba(230,164,76,0.8)]" />
-            Professional AI Consulting
+          <div className="inline-flex max-w-full items-center gap-2 px-3 sm:px-5 py-2 rounded-full glass-strong text-[10px] sm:text-[11px] tracking-[0.2em] sm:tracking-[0.4em] uppercase text-gold-400 mb-8 border border-gold-500/30 whitespace-nowrap overflow-hidden">
+            <span className="shrink-0 h-1.5 w-1.5 rounded-full bg-gold-500 animate-pulse shadow-[0_0_10px_rgba(230,164,76,0.8)]" />
+            <span className="truncate">Professional AI Consulting</span>
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] text-text-primary">
