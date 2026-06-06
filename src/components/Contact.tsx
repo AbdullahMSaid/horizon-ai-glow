@@ -131,8 +131,8 @@ export default function Contact() {
 
         <p className="mt-8 text-center text-text-secondary">
           Prefer email?{" "}
-          <a href="mailto:abdullahi_said1@outlook.com" className="text-gold-500 hover:text-gold-400 transition-colors">
-            abdullahi_said1@outlook.com
+          <a href="mailto:inquiry@horizon-ai-solutions.com" className="text-gold-500 hover:text-gold-400 transition-colors">
+            inquiry@horizon-ai-solutions.com
           </a>
         </p>
       </div>
